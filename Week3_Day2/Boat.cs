@@ -15,7 +15,7 @@ namespace Week3_Day2
         private double engineSize;
 
 
-        //Property - 
+        //Property - you don't necessarily need one for each field.
         public string Name
         {
             get { return this.name; }
@@ -48,6 +48,15 @@ namespace Week3_Day2
             double MPG = engineSize * .7d;
 
             return MPG;
+        }
+
+        public void BoatInfo()
+        {
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Passengers: " + numberOfPassengers);
+            Console.WriteLine("Engine size: " + engineSize);
+            Console.WriteLine("MPG " + CalculateMPG());
+            Console.WriteLine();
         }
 
     }
